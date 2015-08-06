@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A0D7785-9E67-4AD6-A4EF-FF5AB5EDF049}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Utility.Extension</RootNamespace>
+    <AssemblyName>Utility.Extension</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>D:\Projects\ValueDOC\SVN\SourceCode\ValueDocMVC5\ValueDoc\Domain\bin\Debug\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneralUtility.cs" />
+    <Compile Include="Metadata\EntityMapping.cs" />
+    <Compile Include="Metadata\MetadataAccessor.cs" />
+    <Compile Include="ObjectQueryExtensions\AndOrQueryExtensions.cs" />
+    <Compile Include="ObjectQueryExtensions\DistinctByQueryExtensions.cs" />
+    <Compile Include="ObjectQueryExtensions\OrderbyLinqExtensions.cs" />
+    <Compile Include="ObjectQueryExtensions\UpdateDeleteQueryExtensions.cs" />
+    <Compile Include="ObjectQueryExtensions\SqlContext.cs" />
+    <Compile Include="Paging\PagerList.cs" />
+    <Compile Include="ObjectQueryExtensions\PagerQueryExtension.cs" />
+    <Compile Include="Parser\BinaryExpressionParser.cs" />
+    <Compile Include="Parser\DeleteExpressionParser.cs" />
+    <Compile Include="Parser\DmlExpressionParser.cs" />
+    <Compile Include="Parser\IExpressionParser.cs" />
+    <Compile Include="Parser\Interpreter\ConstantInterpreteres\BaseConstantExpressionInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\IInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\IInterpreterChainging.cs" />
+    <Compile Include="Parser\Interpreter\InterpreterFactory.cs" />
+    <Compile Include="Parser\Interpreter\MemberInterpreters\BaseMemberExpressionInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\MemberInterpreters\ColumnNameMemberInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\MemberInterpreters\DateTimeMemberInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\MemberInterpreters\FieldInfoMemberInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\MethodCallInterpreters\BaseMethodCallExpressionInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\MethodCallInterpreters\DefaultMethodCallExpressionInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\MethodCallInterpreters\EntityMemberMethodCallExpressionInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\MethodCallInterpreters\EntityMemberTerminalMethodCallExpressionInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\NewInterpreters\BaseNewExpressionInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\NewInterpreters\DateTimeNewInterpreter.cs" />
+    <Compile Include="Parser\Interpreter\Tokens\SqlClientTokenFactory.cs" />
+    <Compile Include="Parser\Interpreter\Tokens\TokenFactory.cs" />
+    <Compile Include="Parser\MemberInitExpressionParser.cs" />
+    <Compile Include="Parser\UpdateExpressionParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableNameAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

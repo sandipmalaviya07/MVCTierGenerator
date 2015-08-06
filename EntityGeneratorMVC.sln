@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityGeneratorMVC", "EntityGeneratorMVC\EntityGeneratorMVC.csproj", "{86827805-7B5A-46F7-BC59-CB71E01A5525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility.Extension", "Utility.Extension\Utility.Extension.csproj", "{7A0D7785-9E67-4AD6-A4EF-FF5AB5EDF049}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86827805-7B5A-46F7-BC59-CB71E01A5525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86827805-7B5A-46F7-BC59-CB71E01A5525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86827805-7B5A-46F7-BC59-CB71E01A5525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86827805-7B5A-46F7-BC59-CB71E01A5525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A0D7785-9E67-4AD6-A4EF-FF5AB5EDF049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0D7785-9E67-4AD6-A4EF-FF5AB5EDF049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0D7785-9E67-4AD6-A4EF-FF5AB5EDF049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0D7785-9E67-4AD6-A4EF-FF5AB5EDF049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
