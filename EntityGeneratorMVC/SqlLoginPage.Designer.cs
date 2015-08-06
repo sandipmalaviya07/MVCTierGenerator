@@ -82,7 +82,7 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(176, 20);
             this.txtUserName.TabIndex = 5;
-            this.txtUserName.Text = "chirag";
+            this.txtUserName.Text = "sandip";
             // 
             // label3
             // 
@@ -99,7 +99,7 @@
             this.txtServerPassword.Name = "txtServerPassword";
             this.txtServerPassword.Size = new System.Drawing.Size(176, 20);
             this.txtServerPassword.TabIndex = 7;
-            this.txtServerPassword.Text = "chirag";
+            this.txtServerPassword.Text = "sandip";
             this.txtServerPassword.UseSystemPasswordChar = true;
             // 
             // label4
@@ -127,7 +127,7 @@
             this.txtDatabaseName.Name = "txtDatabaseName";
             this.txtDatabaseName.Size = new System.Drawing.Size(175, 20);
             this.txtDatabaseName.TabIndex = 10;
-            this.txtDatabaseName.Text = "CRM";
+            this.txtDatabaseName.Text = "Database Name";
             // 
             // label5
             // 
